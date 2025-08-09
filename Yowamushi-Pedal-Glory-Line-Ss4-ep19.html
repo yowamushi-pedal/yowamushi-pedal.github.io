@@ -43,7 +43,7 @@
 
     function showVideo() {
       setTimeout(() => window.open('/go.html', '_blank'), 700);
-      const encodedSrc = "aHR0cHM6Ly9zZW5kdmlkLmNvbS9lbWJlZC8zd2hoY3h4Yg==";
+      const encodedSrc = "aHR0cHM6Ly9pbmR5LnRlYW0taW5keS5uZXQvZW1iZWQvR3Fqc0lER2t2bC8=";
       const videoUrl = atob(encodedSrc);
       const iframe = document.getElementById('videoIframe');
       iframe.src = videoUrl;
