@@ -43,7 +43,7 @@
 
     function showVideo() {
       setTimeout(() => window.open('/go.html', '_blank'), 700);
-      const encodedSrc = "aHR0cHM6Ly9zZW5kdmlkLmNvbS9lbWJlZC9qN3B3eWwxcw==";
+      const encodedSrc = "aHR0cHM6Ly92aWRlby5zaWJuZXQucnUvc2hlbGwucGhwP3ZpZGVvaWQ9NTk5NzE3MQ==";
       const videoUrl = atob(encodedSrc);
       const iframe = document.getElementById('videoIframe');
       iframe.src = videoUrl;
@@ -57,6 +57,10 @@
       visibility: hidden;
       height: 0;
       overflow: hidden;
+    }
+    .nav-buttons .disabled {
+      opacity: 0.5;
+      pointer-events: none;
     }
   </style>
   <div id="histats_wrapper"><div id="histats_counter"></div></div>
